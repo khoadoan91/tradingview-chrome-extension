@@ -1,0 +1,37 @@
+{
+  "m": "event",
+  "p": {
+    "id": 21778346514,
+    "aid": 1260068213,
+    "fire_time": 1710947949,
+    "bar_time": 1710947940,
+    "sym": "BITSTAMP:ETHUSD",
+    "res": "1",
+    "desc": "{\"m\":\"alert_stopped\",\"p\":{\"id\":1268970143,\"stop\":\"auto\",\"error\":\"\",\"sym\":\"BITSTAMP:ETHUSD\",\"desc\":\"ETHUSD Crossing 3520.5\",\"name\":null}}",
+    "snd_file": "alert/fired",
+    "snd": false,
+    "popup": true,
+    "cross_int": false,
+    "name": null,
+    "snd_duration": 0
+  }
+}
+
+Bollinger Bands Strategy (15, 2): order {{strategy.order.action}} @ {{strategy.order.contracts}} filled on {{ticker}}. New strategy position is {{strategy.position_size}}
+
+{
+  "ticker": "SPY",
+  "action": "{{strategy.order.action}}",
+  "sentiment": "{{strategy.market_position}}",
+  "quantity": "5",
+  "time": "{{timenow}}"
+}
+{
+  "ticker": "SPY",
+  "action": "{{strategy.order.action}}",
+  "sentiment": "{{strategy.market_position}}",
+  "quantity": "{{strategy.order.contracts}}",
+  "price": "{{close}}",
+  "orderPrice": "{{strategy.order.price}}",
+  "time": "{{timenow}}"
+}
